@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
 public class Startup {
-	public static final int a = -2;
-	public static final int b = 2;
+	public static final double a = -2;
+	public static final double b = 2;
 	public static final double finalSolution = 1.53301;
 	public static double przyblizenie = 0.5;
 	
@@ -19,7 +19,9 @@ public class Startup {
         }while(!isDouble(check));
         przyblizenie = Double.parseDouble(check);
         
-        System.out.println(NewtonMethod.newton());
+        //System.out.println(NewtonMethod.newton());
+        System.out.println(Polowienie.p());
+
      }
 	
     public static boolean isDouble(String s) {
@@ -30,6 +32,4 @@ public class Startup {
         }
         return true;
     }
-
-
 }
