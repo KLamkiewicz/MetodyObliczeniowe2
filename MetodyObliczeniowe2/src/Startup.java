@@ -19,8 +19,9 @@ public class Startup {
         }while(!isDouble(check));
         przyblizenie = Double.parseDouble(check);
         
-        //System.out.println(NewtonMethod.newton());
+        System.out.println(NewtonMethod.newton());
         System.out.println(Polowienie.p());
+
 
      }
 	
