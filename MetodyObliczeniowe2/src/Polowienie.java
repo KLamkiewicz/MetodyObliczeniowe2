@@ -11,12 +11,13 @@ public class Polowienie {
 		while(Math.abs(a-b)>Startup.przyblizenie){
 			x = (a+b)/2;
 			
-			if(((Math.pow(a, 5) + a - 10) * (Math.pow(x, 5) + x - 10))<0){
+			if(((Math.pow(a, 3) + a - 1) * (Math.pow(x, 3) + x - 1))<0){
 				b = x;
 			}
-			else if(((Math.pow(b, 5) + b - 10) * (Math.pow(x, 5) + x - 10))<0){
+			else if(((Math.pow(b, 3) + b - 1) * (Math.pow(x, 3) + x - 1))<0){
 				a = x;
 			}
+
 			iloscKrokow++;
 		}
 		wynik = (a+b)/2;
